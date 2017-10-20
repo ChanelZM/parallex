@@ -12,7 +12,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     max-width: 70rem;
-    transform: translateY(100vh);
+    transform: translateY(55vh);
 }
 h1 {
     padding: 1rem;
@@ -29,7 +29,7 @@ p {
 }
 .parallax {
     background-color: #E0D963;
-    height: 100vh;
+    height: 57vh;
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 300px;
