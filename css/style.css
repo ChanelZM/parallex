@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color: #7F0101;
+    background-color: #333;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -25,22 +28,31 @@ p {
     padding: 1rem;
     width: 50%;
 }
-#zero, #one, #two, #three {
-    background-position: bottom;
-    background-repeat: no-repeat;
+img{
     display: block;
-    height: 70rem;
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+.wrap {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
-#zero {
-    background-color: #D10000;
+.parallax {
+    background-color: #E0D963;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
-#one {
-    background-image: url('../img/asset1.png');
-}
-#two {
-    background-image: url('../img/asset2.png');
-}
-#three {
-    background-image: url('../img/asset3.png');
+.parallax-layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
