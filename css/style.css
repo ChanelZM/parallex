@@ -4,8 +4,6 @@
 body {
     background-color: #333;
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
 }
 section {
     color: white;
@@ -14,40 +12,36 @@ section {
     margin-left: auto;
     margin-right: auto;
     max-width: 70rem;
+    transform: translateY(100vh);
 }
 h1 {
-    box-sizing: border-box;
     padding: 1rem;
     font-size: 4rem;
     width: 100%;
 }
 p {
-    box-sizing: border-box;
     font-size: 1.2rem;
     line-height: 2rem;
     padding: 1rem;
     width: 50%;
 }
-img{
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
-.wrap {
+/*.wrap {
     position: relative;
     width: 100vw;
     height: 100vh;
-}
+}*/
 .parallax {
     background-color: #E0D963;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: 100px;
+    perspective: 300px;
     position: absolute;
-    left: 0;
+    left: 50%;
     right: 0;
     bottom: 0;
     top: 0;
+    margin-left: -1500px;
 }
 .parallax-layer {
     position: absolute;
@@ -56,3 +50,22 @@ img{
     bottom: 0;
     top: 0;
 }
+.parallax-layer img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.one {
+    transform: translateZ(-800px) scale(4.5);
+}
+.two {
+    transform: translateZ(-500px) scale(3.5)
+}
+.three {
+    transform: translateZ(-200px) scale(2.5);
+}
+.four {
+    transform: translateZ(-149px) scale(2);
+}
+
+/*Credits to https://codepen.io/samdbeckham/pen/OPXPNp?q=parallax&limit=all&type=type-pens*/
