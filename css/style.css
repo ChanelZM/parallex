@@ -23,13 +23,10 @@ p {
     font-size: 1.2rem;
     line-height: 2rem;
     padding: 1rem;
+    min-width: 25rem;
+    max-width: 35rem;
     width: 50%;
 }
-/*.wrap {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}*/
 .parallax {
     background-color: #E0D963;
     height: 100vh;
@@ -54,18 +51,19 @@ p {
     display: block;
     position: absolute;
     bottom: 0;
+    transform: scale(2);
 }
 .one {
-    transform: translateZ(-800px) scale(4.5);
+    transform: translateZ(-300px) scale(2.5);
 }
 .two {
-    transform: translateZ(-500px) scale(3.5)
+    transform: translateZ(-200px) scale(2)
 }
 .three {
-    transform: translateZ(-200px) scale(2.5);
+    transform: translateZ(-100px) scale(1.5);
 }
 .four {
-    transform: translateZ(-149px) scale(2);
+    transform: translateZ(0px) scale(1);
 }
 
 /*Credits to https://codepen.io/samdbeckham/pen/OPXPNp?q=parallax&limit=all&type=type-pens*/
