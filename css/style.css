@@ -54,7 +54,7 @@ p {
     top: 100%;
     left: 0;
     right: 0;
-    height: 374px;
+    height: 50vh;
     z-index: 2;
 }
 .parallax-layer img {
